@@ -2,7 +2,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const ProfileContext = createContext();
-
 const STORAGE_KEY = 'eduverse-student-profile';
 
 const defaultProfile = {
@@ -19,7 +18,6 @@ export function ProfileProvider({ children }) {
   const [profile, setProfile] = useState(() => {
     try {
       const savedProfile = localStorage.getItem(STORAGE_KEY);
-
       return savedProfile
         ? { ...defaultProfile, ...JSON.parse(savedProfile) }
         : defaultProfile;
@@ -51,15 +49,15 @@ export function ProfileProvider({ children }) {
     setProfile(defaultProfile);
   };
 
-  const value = {
-    profile,
-    updateProfile,
-    updateProfileImage,
-    resetProfile,
-  };
-
   return (
-    <ProfileContext.Provider value={value}>
+    <ProfileContext.Provider
+      value={{
+        profile,
+        updateProfile,
+        updateProfileImage,
+        resetProfile,
+      }}
+    >
       {children}
     </ProfileContext.Provider>
   );
@@ -69,9 +67,7 @@ export function useProfile() {
   const context = useContext(ProfileContext);
 
   if (!context) {
-    throw new Error(
-      'useProfile must be used inside a ProfileProvider'
-    );
+    throw new Error('useProfile must be used inside a ProfileProvider');
   }
 
   return context;

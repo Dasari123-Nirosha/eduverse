@@ -47,9 +47,8 @@ const navigationGroups = [
 
 function Sidebar({ isOpen = true, onClose }) {
   return (
-    <aside className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}>
+    <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
 
-      {/* Sidebar Brand */}
       <div className="sidebar-brand">
         <div className="sidebar-logo">
           <GraduationCap size={27} />
@@ -62,6 +61,7 @@ function Sidebar({ isOpen = true, onClose }) {
 
         {onClose && (
           <button
+            type="button"
             className="sidebar-close"
             onClick={onClose}
             aria-label="Close sidebar"
@@ -71,12 +71,9 @@ function Sidebar({ isOpen = true, onClose }) {
         )}
       </div>
 
-      {/* Sidebar Navigation */}
       <nav className="sidebar-navigation">
-
         {navigationGroups.map((group) => (
           <div className="sidebar-group" key={group.title}>
-
             <p className="sidebar-group-title">
               {group.title}
             </p>
@@ -99,13 +96,10 @@ function Sidebar({ isOpen = true, onClose }) {
                 </NavLink>
               );
             })}
-
           </div>
         ))}
-
       </nav>
 
-      {/* Sidebar Footer */}
       <div className="sidebar-footer">
         <GraduationCap size={17} />
         <span>Learn • Grow • Achieve</span>
