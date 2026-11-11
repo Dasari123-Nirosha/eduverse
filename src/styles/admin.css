@@ -1,0 +1,1246 @@
+
+/* 1. ADMIN DASHBOARD PAGE */
+
+.admin-dashboard,
+.admin-manage-courses,
+.admin-add-course,
+.admin-edit-course,
+.admin-course-preview {
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  color: #1F362D;
+  background: #F7F4EA;
+}
+
+.admin-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.admin-page-header h1 {
+  margin: 5px 0 8px;
+  color: #1F362D;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-page-header p {
+  margin: 0;
+  color: #1F362D;
+  font-size: 14px;
+}
+
+.admin-page-header .admin-page-label {
+  color: #97A589;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* 2. ADMIN BUTTONS */
+
+.admin-primary-button,
+.admin-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 43px;
+  padding: 11px 18px;
+  border: 1px solid #1F362D;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-primary-button {
+  background: #1F362D;
+  color: #F7F4EA;
+}
+
+.admin-primary-button:hover {
+  background: #97A589;
+  color: #1F362D;
+  border-color: #97A589;
+}
+
+.admin-secondary-button {
+  background: #E2E6D7;
+  color: #1F362D;
+  border-color: #97A589;
+}
+
+.admin-secondary-button:hover {
+  background: #97A589;
+}
+
+.admin-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: #1F362D;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 3. ADMIN WELCOME CARD */
+
+.admin-welcome-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  background: #1F362D;
+  color: #F7F4EA;
+}
+
+.admin-welcome-card span {
+  color: #E2E6D7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.admin-welcome-card h2 {
+  margin: 12px 0;
+  font-size: 25px;
+}
+
+.admin-welcome-card p {
+  max-width: 550px;
+  margin: 0;
+  color: #E2E6D7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.admin-welcome-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 85px;
+  height: 85px;
+  border-radius: 18px;
+  background: #97A589;
+  color: #1F362D;
+}
+
+/* 4. ADMIN STATISTICS */
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  border: 1px solid #E2E6D7;
+  border-radius: 12px;
+  background: #F7F4EA;
+}
+
+.admin-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.admin-stat-card p {
+  margin: 0 0 7px;
+  color: #1F362D;
+  font-size: 13px;
+}
+
+.admin-stat-card h2 {
+  margin: 0;
+  color: #1F362D;
+  font-size: 25px;
+}
+
+/* 5. ADMIN DASHBOARD SECTIONS */
+
+.admin-dashboard-section,
+.admin-quick-actions {
+  margin-bottom: 28px;
+  padding: 23px;
+  border: 1px solid #E2E6D7;
+  border-radius: 12px;
+  background: #F7F4EA;
+}
+
+.admin-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-section-heading h2,
+.admin-quick-actions h2 {
+  margin: 0 0 6px;
+  color: #1F362D;
+  font-size: 19px;
+}
+
+.admin-section-heading p {
+  margin: 0;
+  color: #97A589;
+  font-size: 13px;
+}
+
+/* 6. RECENT COURSES */
+
+.admin-recent-courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-recent-course {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid #E2E6D7;
+}
+
+.admin-recent-course:last-child {
+  border-bottom: none;
+}
+
+.admin-course-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.admin-recent-course-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-recent-course-info h3 {
+  overflow: hidden;
+  margin: 0 0 5px;
+  color: #1F362D;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-recent-course-info p {
+  margin: 0;
+  color: #97A589;
+  font-size: 12px;
+}
+
+/* 7. COURSE STATUS */
+
+.admin-course-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border: 1px solid #97A589;
+  border-radius: 20px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* 8. ADMIN QUICK ACTIONS */
+
+.admin-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.admin-action-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  border: 1px solid #97A589;
+  border-radius: 10px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.admin-action-card span {
+  flex: 1;
+}
+
+.admin-action-card:hover {
+  background: #97A589;
+}
+
+/* 9. COURSE MANAGEMENT TOOLBAR */
+
+.admin-course-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  padding: 0 14px;
+  border: 1px solid #97A589;
+  border-radius: 8px;
+  background: #F7F4EA;
+  color: #1F362D;
+}
+
+.admin-search-box input {
+  width: 100%;
+  min-height: 44px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1F362D;
+  font-size: 14px;
+}
+
+.admin-category-filter {
+  min-width: 170px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #97A589;
+  border-radius: 8px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 10. COURSE SUMMARY */
+
+.admin-course-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  border: 1px solid #97A589;
+  border-radius: 10px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.admin-course-summary h2 {
+  margin: 0 0 5px;
+  font-size: 25px;
+}
+
+.admin-course-summary p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* 11. COURSE TABLE */
+
+.admin-course-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #E2E6D7;
+  border-radius: 12px;
+}
+
+.admin-course-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #F7F4EA;
+  text-align: left;
+}
+
+.admin-course-table th {
+  padding: 16px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-course-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #E2E6D7;
+  color: #1F362D;
+  font-size: 13px;
+}
+
+.admin-course-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table-course {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+  font-weight: 600;
+}
+
+.admin-table-course img {
+  width: 48px;
+  height: 42px;
+  border-radius: 7px;
+  object-fit: cover;
+  background: #E2E6D7;
+}
+
+/* 12. TABLE ACTIONS */
+
+.admin-table-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.admin-table-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #97A589;
+  border-radius: 7px;
+  background: #E2E6D7;
+  color: #1F362D;
+  cursor: pointer;
+}
+
+.admin-table-actions button:hover {
+  background: #97A589;
+}
+
+/* 13. COURSE FORM */
+
+.admin-course-form {
+  max-width: 950px;
+  padding: 27px;
+  border: 1px solid #E2E6D7;
+  border-radius: 12px;
+  background: #F7F4EA;
+}
+
+.admin-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 20px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #E2E6D7;
+  color: #1F362D;
+}
+
+.admin-form-heading h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+
+.admin-form-heading p {
+  margin: 0;
+  color: #97A589;
+  font-size: 13px;
+}
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 21px;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.admin-form-group label {
+  color: #1F362D;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  border: 1px solid #97A589;
+  border-radius: 7px;
+  outline: none;
+  background: #F7F4EA;
+  color: #1F362D;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.admin-form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+  border-color: #1F362D;
+  outline: 2px solid #E2E6D7;
+}
+
+.admin-full-width {
+  grid-column: 1 / -1;
+}
+
+/* 14. FORM ACTIONS */
+
+.admin-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 22px;
+  margin-top: 24px;
+  border-top: 1px solid #E2E6D7;
+}
+
+/* 15. COURSE PREVIEW */
+
+.admin-preview-card {
+  overflow: hidden;
+  border: 1px solid #E2E6D7;
+  border-radius: 13px;
+  background: #F7F4EA;
+}
+
+.admin-preview-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #E2E6D7;
+}
+
+.admin-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-preview-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #1F362D;
+}
+
+.admin-preview-content {
+  padding: 28px;
+}
+
+.admin-preview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.admin-preview-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #1F362D;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-preview-content h2 {
+  margin: 0 0 13px;
+  color: #1F362D;
+  font-size: 26px;
+}
+
+.admin-preview-description {
+  margin: 0;
+  color: #1F362D;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.admin-preview-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 22px 0;
+  margin-top: 22px;
+  border-top: 1px solid #E2E6D7;
+  border-bottom: 1px solid #E2E6D7;
+}
+
+.admin-preview-details > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1F362D;
+}
+
+.admin-preview-details span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-preview-details small {
+  color: #97A589;
+  font-size: 12px;
+}
+
+.admin-preview-details strong {
+  color: #1F362D;
+  font-size: 14px;
+}
+
+.admin-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 23px;
+}
+
+/* 16. EMPTY AND LOADING STATES */
+
+.admin-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 30px;
+  color: #1F362D;
+  text-align: center;
+}
+
+.admin-empty-state h2,
+.admin-empty-state h3 {
+  margin: 13px 0 7px;
+}
+
+.admin-empty-state p {
+  margin: 0 0 17px;
+  color: #97A589;
+  font-size: 14px;
+}
+
+.admin-loading {
+  padding: 40px;
+  color: #1F362D;
+  text-align: center;
+}
+
+/* 17. RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-dashboard,
+  .admin-manage-courses,
+  .admin-add-course,
+  .admin-edit-course,
+  .admin-course-preview {
+    padding: 15px;
+  }
+
+  .admin-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-page-header h1 {
+    font-size: 23px;
+  }
+
+  .admin-welcome-card {
+    padding: 22px;
+  }
+
+  .admin-welcome-card h2 {
+    font-size: 20px;
+  }
+
+  .admin-welcome-icon {
+    display: none;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-course-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-category-filter {
+    width: 100%;
+  }
+
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-full-width {
+    grid-column: auto;
+  }
+
+  .admin-course-form {
+    padding: 18px;
+  }
+
+  .admin-form-actions,
+  .admin-preview-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-preview-content {
+    padding: 19px;
+  }
+
+  .admin-preview-content h2 {
+    font-size: 21px;
+  }
+
+  .admin-preview-details {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-preview-image {
+    height: 210px;
+  }
+}
+
+
+
+
+/* 18. ADMIN APPLICATION LAYOUT */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #F7F4EA;
+  color: #1F362D;
+}
+
+.admin-sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  padding: 24px 16px;
+  background: #1F362D;
+  color: #F7F4EA;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 28px;
+  border-bottom: 1px solid #97A589;
+  color: #F7F4EA;
+}
+
+.admin-brand svg {
+  flex-shrink: 0;
+  color: #E2E6D7;
+}
+
+.admin-brand h2 {
+  margin: 0 0 5px;
+  color: #F7F4EA;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.admin-brand span {
+  display: block;
+  color: #E2E6D7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 28px;
+}
+
+.admin-nav-title {
+  display: block;
+  margin: 0 0 12px 10px;
+  color: #97A589;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 12px;
+  border-radius: 8px;
+  background: transparent;
+  color: #F7F4EA;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.admin-nav-link svg {
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+  background: #97A589;
+  color: #1F362D;
+}
+
+.admin-back-link {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #97A589;
+  border-radius: 0;
+}
+
+.admin-sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding: 17px 8px 0;
+  border-top: 1px solid #97A589;
+  color: #E2E6D7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-main-content {
+  flex: 1;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+/* 19. ADMIN SIDEBAR RESPONSIVE */
+
+@media (max-width: 650px) {
+  .admin-sidebar {
+    width: 75px;
+    min-width: 75px;
+    padding: 20px 9px;
+  }
+
+  .admin-brand {
+    justify-content: center;
+    padding: 0 0 22px;
+  }
+
+  .admin-brand > div,
+  .admin-nav-title,
+  .admin-sidebar-footer span {
+    display: none;
+  }
+
+  .admin-nav-link {
+    justify-content: center;
+    padding: 13px 8px;
+    font-size: 0;
+  }
+
+  .admin-nav-link svg {
+    min-width: 20px;
+  }
+
+  .admin-back-link {
+    margin-top: 15px;
+  }
+
+  .admin-sidebar-footer {
+    justify-content: center;
+  }
+}
+
+
+
+/* 20. ADMIN DARK THEME */
+
+[data-theme="dark"] .admin-layout {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-dashboard,
+[data-theme="dark"] .admin-manage-courses,
+[data-theme="dark"] .admin-add-course,
+[data-theme="dark"] .admin-edit-course,
+[data-theme="dark"] .admin-course-preview {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-page-header h1,
+[data-theme="dark"] .admin-page-header p,
+[data-theme="dark"] .admin-stat-card h2,
+[data-theme="dark"] .admin-stat-card p,
+[data-theme="dark"] .admin-section-heading h2,
+[data-theme="dark"] .admin-quick-actions h2,
+[data-theme="dark"] .admin-recent-course-info h3,
+[data-theme="dark"] .admin-course-summary,
+[data-theme="dark"] .admin-form-heading,
+[data-theme="dark"] .admin-form-group label,
+[data-theme="dark"] .admin-preview-content h2,
+[data-theme="dark"] .admin-preview-description,
+[data-theme="dark"] .admin-preview-details > div,
+[data-theme="dark"] .admin-preview-details strong,
+[data-theme="dark"] .admin-empty-state,
+[data-theme="dark"] .admin-loading {
+  color: var(--text-primary);
+}
+
+/* ADMIN CARDS */
+
+[data-theme="dark"] .admin-stat-card,
+[data-theme="dark"] .admin-dashboard-section,
+[data-theme="dark"] .admin-quick-actions,
+[data-theme="dark"] .admin-course-form,
+[data-theme="dark"] .admin-preview-card {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+}
+
+/* WELCOME CARD */
+
+[data-theme="dark"] .admin-welcome-card {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-welcome-card span,
+[data-theme="dark"] .admin-welcome-card h2,
+[data-theme="dark"] .admin-welcome-card p {
+  color: var(--color-primary);
+}
+
+/* STATISTICS */
+
+[data-theme="dark"] .admin-stat-icon,
+[data-theme="dark"] .admin-course-icon {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+/* COURSE MANAGEMENT */
+
+[data-theme="dark"] .admin-search-box,
+[data-theme="dark"] .admin-category-filter,
+[data-theme="dark"] .admin-course-table,
+[data-theme="dark"] .admin-course-table-wrapper {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-search-box input {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-search-box input::placeholder {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .admin-course-table th {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-course-table td {
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* COURSE SUMMARY AND STATUS */
+
+[data-theme="dark"] .admin-course-summary,
+[data-theme="dark"] .admin-course-status,
+[data-theme="dark"] .admin-action-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-action-card:hover {
+  background: var(--color-accent);
+}
+
+/* COURSE FORM */
+
+[data-theme="dark"] .admin-form-heading {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .admin-form-group input,
+[data-theme="dark"] .admin-form-group select,
+[data-theme="dark"] .admin-form-group textarea {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .admin-form-group input::placeholder,
+[data-theme="dark"] .admin-form-group textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .admin-form-group input:focus,
+[data-theme="dark"] .admin-form-group select:focus,
+[data-theme="dark"] .admin-form-group textarea:focus {
+  border-color: var(--color-secondary);
+  outline-color: var(--color-accent);
+}
+
+/* TABLE ACTIONS */
+
+[data-theme="dark"] .admin-table-actions button {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-table-actions button:hover {
+  background: var(--color-accent);
+}
+
+/* PREVIEW */
+
+[data-theme="dark"] .admin-preview-image {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .admin-preview-image-placeholder {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-preview-details {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .admin-preview-details small {
+  color: var(--text-secondary);
+}
+
+/* BUTTONS */
+
+[data-theme="dark"] .admin-primary-button {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+[data-theme="dark"] .admin-primary-button:hover {
+  background: var(--color-accent);
+}
+
+[data-theme="dark"] .admin-secondary-button {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .admin-secondary-button:hover {
+  background: var(--color-accent);
+}
+
+[data-theme="dark"] .admin-text-button {
+  color: var(--text-primary);
+}
+
+/* ADMIN SIDEBAR */
+
+[data-theme="dark"] .admin-sidebar {
+  background: var(--bg-sidebar);
+  color: var(--text-primary);
+  border-right: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .admin-brand,
+[data-theme="dark"] .admin-brand h2,
+[data-theme="dark"] .admin-nav-link {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-brand svg {
+  color: var(--color-secondary);
+}
+
+[data-theme="dark"] .admin-brand span,
+[data-theme="dark"] .admin-sidebar-footer {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .admin-nav-link:hover,
+[data-theme="dark"] .admin-nav-link.active {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .admin-nav-title {
+  color: var(--color-secondary);
+}
+
+/* ADMIN EMPTY STATES */
+
+[data-theme="dark"] .admin-empty-state p {
+  color: var(--text-secondary);
+}
+
+/* ADMIN BORDERS */
+
+[data-theme="dark"] .admin-recent-course,
+[data-theme="dark"] .admin-form-actions {
+  border-color: var(--border-color);
+}
+
+
+
+/*  PAGINATION - ADMIN DASHBOARD  */
+
+.admin-dashboard-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  padding: 16px 0;
+  border-top: 1px solid #E2E6D7;
+}
+
+.admin-dashboard-pagination p {
+  margin: 0;
+  color: #1F362D;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.admin-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.admin-pagination-arrow,
+.admin-pagination-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #97A589;
+  border-radius: 8px;
+  background: #F7F4EA;
+  color: #1F362D;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-pagination-arrow:hover:not(:disabled),
+.admin-pagination-number:hover {
+  background: #E2E6D7;
+}
+
+.admin-pagination-number.active {
+  background: #1F362D;
+  color: #F7F4EA;
+  border-color: #1F362D;
+}
+
+.admin-pagination-arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard-pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-pagination-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

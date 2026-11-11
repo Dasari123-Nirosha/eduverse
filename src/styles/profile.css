@@ -1,0 +1,467 @@
+
+/* 1. STUDENT PROFILE PAGE */
+
+.student-profile-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* 2. PROFILE PAGE HEADER */
+
+.profile-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.profile-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.profile-page-header h1 {
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.profile-page-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* 3. PROFILE OVERVIEW */
+
+.profile-overview-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 26px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-surface);
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--text-on-dark);
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.profile-overview-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-overview-info h2 {
+  margin-bottom: 9px;
+  color: var(--text-primary);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.profile-overview-info p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.profile-student-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 4. PROFILE EDIT BUTTON */
+
+.profile-edit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 9px;
+  background: var(--color-primary);
+  color: var(--text-on-dark);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-edit-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* 5. SUCCESS MESSAGE */
+
+.profile-success-message {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* 6. PROFILE DETAILS CARD */
+
+.profile-details-card {
+  padding: 28px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-surface);
+}
+
+.profile-section-heading {
+  margin-bottom: 25px;
+}
+
+.profile-section-heading h2 {
+  margin-bottom: 7px;
+  color: var(--text-primary);
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.profile-section-heading p {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* 7. PROFILE FORM GRID */
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.profile-field label {
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-field input,
+.profile-field textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  outline: none;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.profile-field input {
+  min-height: 46px;
+}
+
+.profile-field textarea {
+  min-height: 110px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.profile-field input:focus,
+.profile-field textarea:focus {
+  border-color: var(--color-secondary);
+}
+
+.profile-field input:disabled,
+.profile-field textarea:disabled {
+  opacity: 1;
+  cursor: default;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.profile-field input::placeholder,
+.profile-field textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+.profile-full-width {
+  grid-column: 1 / -1;
+}
+
+/* 8. PROFILE FORM ACTIONS */
+
+.profile-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.profile-cancel-btn,
+.profile-save-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-cancel-btn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.profile-save-btn {
+  background: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+.profile-cancel-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.profile-save-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* 9. LEARNING INFORMATION */
+
+.profile-learning-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-secondary);
+}
+
+.profile-learning-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+.profile-learning-card h3 {
+  margin-bottom: 7px;
+  color: var(--text-primary);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.profile-learning-card p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* 10. TABLET RESPONSIVE */
+
+@media (max-width: 768px) {
+  .student-profile-page {
+    padding: 20px;
+  }
+
+  .profile-overview-card {
+    flex-wrap: wrap;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-full-width {
+    grid-column: auto;
+  }
+}
+
+/* 11. MOBILE RESPONSIVE */
+
+@media (max-width: 520px) {
+  .student-profile-page {
+    padding: 14px;
+  }
+
+  .profile-page-header h1 {
+    font-size: 25px;
+  }
+
+  .profile-overview-card {
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .profile-avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 26px;
+  }
+
+  .profile-overview-info h2 {
+    font-size: 19px;
+  }
+
+  .profile-edit-btn {
+    width: 100%;
+  }
+
+  .profile-details-card {
+    padding: 18px;
+  }
+
+  .profile-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .profile-cancel-btn,
+  .profile-save-btn {
+    width: 100%;
+  }
+
+  .profile-learning-card {
+    align-items: flex-start;
+    padding: 17px;
+  }
+}
+
+
+/* 12. PROFILE DARK THEME */
+
+[data-theme="dark"] .student-profile-page {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .profile-overview-card,
+[data-theme="dark"] .profile-details-card {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .profile-avatar {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .profile-overview-info h2,
+[data-theme="dark"] .profile-section-heading h2,
+[data-theme="dark"] .profile-learning-card h3,
+[data-theme="dark"] .profile-field label {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .profile-overview-info p,
+[data-theme="dark"] .profile-page-header p,
+[data-theme="dark"] .profile-section-heading p,
+[data-theme="dark"] .profile-learning-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .profile-student-badge,
+[data-theme="dark"] .profile-success-message {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .profile-field input,
+[data-theme="dark"] .profile-field textarea {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .profile-field input:disabled,
+[data-theme="dark"] .profile-field textarea:disabled {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .profile-field input::placeholder,
+[data-theme="dark"] .profile-field textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .profile-learning-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .profile-learning-icon {
+  background: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+[data-theme="dark"] .profile-edit-btn,
+[data-theme="dark"] .profile-save-btn {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .profile-cancel-btn {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .profile-edit-btn:hover,
+[data-theme="dark"] .profile-save-btn:hover,
+[data-theme="dark"] .profile-cancel-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}

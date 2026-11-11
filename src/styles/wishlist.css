@@ -1,0 +1,237 @@
+
+/* 1. WISHLIST PAGE */
+.wishlist-page {
+  width: 100%;
+  padding: 24px;
+  color: #1F362D;
+}
+
+/* 2. WISHLIST HEADER */
+.wishlist-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.wishlist-header-icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.wishlist-header h1 {
+  margin: 0 0 6px;
+  color: #1F362D;
+}
+
+.wishlist-header p {
+  margin: 0;
+  color: #97A589;
+}
+
+/* 3. WISHLIST SUMMARY */
+.wishlist-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 12px 18px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-weight: 600;
+}
+
+/* 4. WISHLIST GRID */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* 5. WISHLIST CARD */
+.wishlist-card {
+  overflow: hidden;
+  border: 1px solid #97A589;
+  border-radius: 14px;
+  background: #F7F4EA;
+}
+
+/* 6. COURSE IMAGE */
+.wishlist-course-image {
+  width: 100%;
+  height: 190px;
+  display: block;
+  object-fit: cover;
+}
+
+/* 7. WISHLIST CARD CONTENT */
+.wishlist-card-content {
+  padding: 18px;
+}
+
+.wishlist-category {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #97A589;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wishlist-card-content h3 {
+  margin: 0 0 9px;
+  color: #1F362D;
+  font-size: 19px;
+}
+
+.wishlist-instructor {
+  margin: 0 0 14px;
+  color: #97A589;
+}
+
+/* 8. COURSE DETAILS */
+.wishlist-course-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #1F362D;
+  font-size: 13px;
+}
+
+.wishlist-course-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 9. WISHLIST CARD ACTIONS */
+.wishlist-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wishlist-open-button {
+  flex: 1;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #1F362D;
+  color: #F7F4EA;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wishlist-open-button:hover {
+  background: #97A589;
+  color: #1F362D;
+}
+
+/* 10. REMOVE BUTTON */
+.wishlist-remove-button {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #97A589;
+  border-radius: 8px;
+  background: #E2E6D7;
+  color: #1F362D;
+  cursor: pointer;
+}
+
+.wishlist-remove-button:hover {
+  background: #97A589;
+}
+
+/* 11. EMPTY WISHLIST */
+.wishlist-empty {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 1px dashed #97A589;
+  border-radius: 14px;
+  background: #F7F4EA;
+  text-align: center;
+}
+
+.wishlist-empty-icon {
+  width: 78px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.wishlist-empty h2 {
+  margin: 0 0 10px;
+  color: #1F362D;
+}
+
+.wishlist-empty p {
+  max-width: 400px;
+  margin: 0 0 22px;
+  color: #97A589;
+  line-height: 1.6;
+}
+
+/* 12. EXPLORE BUTTON */
+.wishlist-explore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1F362D;
+  color: #F7F4EA;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wishlist-explore-button:hover {
+  background: #97A589;
+  color: #1F362D;
+}
+
+/* 13. RESPONSIVE DESIGN */
+@media (max-width: 1000px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .wishlist-page {
+    padding: 16px;
+  }
+
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wishlist-header h1 {
+    font-size: 23px;
+  }
+}

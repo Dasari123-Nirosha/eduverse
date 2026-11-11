@@ -1,0 +1,88 @@
+.notifications-page {
+  background: #F7F4EA !important;
+  color: #1F362D !important;
+  padding: 28px !important;
+}
+
+.notifications-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-bottom: 28px !important;
+}
+
+.notifications-summary {
+  padding: 20px !important;
+  margin-bottom: 26px !important;
+  background: #E2E6D7 !important;
+  border: 1px solid #97A589 !important;
+  border-radius: 14px !important;
+}
+
+.notifications-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+.notification-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  padding: 20px !important;
+  background: #E2E6D7 !important;
+  border: 1px solid #97A589 !important;
+  border-radius: 12px !important;
+}
+
+.notification-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: #97A589 !important;
+  border-radius: 12px !important;
+}
+
+.notification-content {
+  flex: 1 !important;
+}
+
+.notification-actions {
+  display: flex !important;
+  gap: 8px !important;
+}
+
+
+/* 14. NOTIFICATIONS PAGE LAYOUT OVERRIDE */
+
+.main-content .notifications-page {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  padding: 28px;
+  background: #F7F4EA !important;
+  color: #1F362D !important;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.main-content .notifications-page .notification-card {
+  display: flex;
+  width: 100%;
+  background: #E2E6D7 !important;
+  border: 1px solid #97A589 !important;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main-content .notifications-page .notification-icon {
+  background: #97A589 !important;
+  color: #1F362D !important;
+}
+
+.main-content .notifications-page .notification-content h3,
+.main-content .notifications-page .notification-content p {
+  color: #1F362D !important;
+}

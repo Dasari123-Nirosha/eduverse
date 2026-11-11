@@ -1,0 +1,659 @@
+
+/* 1. DASHBOARD PAGE */
+
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* 2. DASHBOARD WELCOME BANNER */
+
+.welcome-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  background: var(--bg-sidebar);
+  color: var(--text-on-dark);
+}
+
+.welcome-banner-content {
+  flex: 1;
+}
+
+.welcome-banner-content span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.welcome-banner-content h1 {
+  margin: 0 0 12px;
+  color: var(--text-on-dark);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.welcome-banner-content p {
+  max-width: 600px;
+  margin: 0;
+  color: var(--bg-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.welcome-banner-image {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.welcome-banner-image svg {
+  width: 75px;
+  height: 75px;
+}
+
+/* 3. DASHBOARD SECTION HEADING */
+
+.dashboard-section {
+  margin-bottom: 30px;
+}
+
+.dashboard-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.dashboard-section-heading h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.dashboard-section-heading p {
+  margin: 5px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.dashboard-section-heading a {
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dashboard-section-heading a:hover {
+  color: var(--text-secondary);
+}
+
+/* 4. DASHBOARD STATISTICS GRID */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+/* 5. DASHBOARD STAT CARD */
+
+.stat-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.stat-card-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.stat-card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.stat-card h3 {
+  margin: 0 0 7px;
+  color: var(--text-primary);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.stat-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stat-card-change {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* 6. DASHBOARD MAIN GRID */
+
+.dashboard-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+/* 7. DASHBOARD CONTENT CARD */
+
+.dashboard-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.dashboard-card h3 {
+  margin: 0 0 18px;
+  color: var(--text-primary);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* 8. CONTINUE LEARNING */
+
+.continue-learning-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.continue-learning-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.continue-learning-image {
+  width: 85px;
+  height: 70px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 9px;
+  background: var(--bg-secondary);
+}
+
+.continue-learning-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.continue-learning-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.continue-learning-info h4 {
+  margin: 0 0 7px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.continue-learning-info p {
+  margin: 0 0 10px;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.continue-learning-info a {
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 9. PROGRESS BAR */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--bg-secondary);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: var(--text-primary);
+  transition: width 0.3s ease;
+}
+
+.progress-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 7px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* 10. RECENT COURSES */
+
+.recent-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.recent-course-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.recent-course-card img {
+  display: block;
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+}
+
+.recent-course-content {
+  padding: 15px;
+}
+
+.recent-course-content h4 {
+  margin: 0 0 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.recent-course-content p {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.recent-course-content a {
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 11. RECOMMENDED COURSES */
+
+.recommended-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.recommended-course-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.recommended-course-card img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+}
+
+.recommended-course-content {
+  padding: 15px;
+}
+
+.recommended-course-content h4 {
+  margin: 0 0 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.recommended-course-content p {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* 12. LEARNING ACTIVITY */
+
+.learning-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.learning-activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.learning-activity-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.learning-activity-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.learning-activity-info h4 {
+  margin: 0 0 5px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.learning-activity-info p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+/* 13. UPCOMING QUIZZES */
+
+.upcoming-quizzes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upcoming-quiz-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 11px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.upcoming-quiz-info {
+  min-width: 0;
+}
+
+.upcoming-quiz-info h4 {
+  margin: 0 0 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.upcoming-quiz-info p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.upcoming-quiz-item a {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--bg-sidebar);
+  color: var(--text-on-dark);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 14. DASHBOARD EMPTY STATE */
+
+.dashboard-empty {
+  padding: 30px 20px;
+  border: 1px dashed var(--border-color);
+  border-radius: 12px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.dashboard-empty svg {
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+}
+
+.dashboard-empty h4 {
+  margin: 0 0 7px;
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.dashboard-empty p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* 15. DASHBOARD BUTTONS */
+
+.dashboard-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 9px;
+  background: var(--bg-sidebar);
+  color: var(--text-on-dark);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* 16. DASHBOARD TABLET RESPONSIVE */
+
+@media (max-width: 992px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-courses-grid,
+  .recommended-courses-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* 17. DASHBOARD MOBILE RESPONSIVE */
+
+@media (max-width: 576px) {
+  .dashboard-page {
+    padding: 15px;
+  }
+
+  .welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+
+  .welcome-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .welcome-banner-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .welcome-banner-image svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .stat-card h3 {
+    font-size: 21px;
+  }
+
+  .dashboard-card {
+    padding: 15px;
+  }
+
+  .dashboard-section-heading h2 {
+    font-size: 18px;
+  }
+
+  .recent-courses-grid,
+  .recommended-courses-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .recent-course-card img,
+  .recommended-course-card img {
+    height: 90px;
+  }
+
+  .recent-course-content,
+  .recommended-course-content {
+    padding: 8px;
+  }
+
+  .recent-course-content h4,
+  .recommended-course-content h4 {
+    font-size: 11px;
+  }
+
+  .recent-course-content p,
+  .recommended-course-content p {
+    font-size: 10px;
+  }
+
+  .continue-learning-item {
+    gap: 9px;
+    padding: 9px;
+  }
+
+  .continue-learning-image {
+    width: 65px;
+    height: 60px;
+  }
+}
+
+/* 18. EXTRA SMALL MOBILE RESPONSIVE */
+
+@media (max-width: 380px) {
+  .dashboard-page {
+    padding: 10px;
+  }
+
+  .welcome-banner {
+    padding: 17px;
+  }
+
+  .welcome-banner-content h1 {
+    font-size: 19px;
+  }
+
+  .dashboard-stats {
+    gap: 8px;
+  }
+
+  .stat-card {
+    padding: 11px;
+  }
+
+  .stat-card h3 {
+    font-size: 18px;
+  }
+
+  .recent-courses-grid,
+  .recommended-courses-grid {
+    gap: 6px;
+  }
+}

@@ -1,0 +1,346 @@
+
+/* 1. CERTIFICATES PAGE */
+
+.certificates-page {
+  padding: 28px;
+  min-height: 100vh;
+  background: var(--bg-primary, #F7F4EA);
+  color: var(--text-primary, #1F362D);
+}
+
+/* 2. CERTIFICATES HEADER */
+
+.certificates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.certificates-eyebrow {
+  color: #97A589;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.certificates-header h1 {
+  margin: 8px 0;
+  color: var(--text-primary, #1F362D);
+  font-size: 30px;
+}
+
+.certificates-header p {
+  color: var(--text-secondary, #97A589);
+  font-size: 14px;
+}
+
+.certificates-header-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+/* 3. CERTIFICATE SUMMARY */
+
+.certificates-summary {
+  padding: 22px;
+  margin-bottom: 28px;
+  border-radius: 14px;
+  background: #E2E6D7;
+}
+
+.certificates-summary > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #1F362D;
+}
+
+.certificates-summary h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.certificates-summary p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+/* 4. EMPTY CERTIFICATES */
+
+.certificates-empty {
+  padding: 65px 20px;
+  text-align: center;
+  border: 1px dashed #97A589;
+  border-radius: 16px;
+  background: #F7F4EA;
+  color: #1F362D;
+}
+
+.certificates-empty svg {
+  color: #97A589;
+}
+
+.certificates-empty h2 {
+  margin: 18px 0 8px;
+  font-size: 22px;
+}
+
+.certificates-empty p {
+  color: #97A589;
+  font-size: 14px;
+}
+
+/* 5. CERTIFICATES GRID */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+/* 6. CERTIFICATE CARD */
+
+.certificate-card {
+  display: flex;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #E2E6D7;
+  border-radius: 15px;
+  background: #F7F4EA;
+}
+
+.certificate-card-icon {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+.certificate-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.certificate-card-content > span {
+  color: #97A589;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.certificate-card-content h3 {
+  margin: 10px 0;
+  color: #1F362D;
+  font-size: 18px;
+}
+
+.certificate-card-content p {
+  color: #97A589;
+  font-size: 13px;
+}
+
+/* 7. CERTIFICATE ACTIONS */
+
+.certificate-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.certificate-card-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 13px;
+  border: 1px solid #97A589;
+  border-radius: 8px;
+  background: #E2E6D7;
+  color: #1F362D;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.certificate-card-actions button:hover {
+  background: #97A589;
+  color: #F7F4EA;
+}
+
+/* 8. DARK MODE */
+
+[data-theme="dark"] .certificates-page {
+  background: #1F362D;
+  color: #F7F4EA;
+}
+
+[data-theme="dark"] .certificates-header h1 {
+  color: #F7F4EA;
+}
+
+[data-theme="dark"] .certificates-header p {
+  color: #97A589;
+}
+
+[data-theme="dark"] .certificates-header-icon,
+[data-theme="dark"] .certificate-card-icon {
+  background: #97A589;
+  color: #1F362D;
+}
+
+[data-theme="dark"] .certificates-summary {
+  background: #97A589;
+  color: #1F362D;
+}
+
+[data-theme="dark"] .certificates-summary > div {
+  color: #1F362D;
+}
+
+[data-theme="dark"] .certificates-empty {
+  background: #1F362D;
+  border-color: #97A589;
+  color: #F7F4EA;
+}
+
+[data-theme="dark"] .certificates-empty h2 {
+  color: #F7F4EA;
+}
+
+[data-theme="dark"] .certificates-empty p {
+  color: #97A589;
+}
+
+[data-theme="dark"] .certificate-card {
+  background: #1F362D;
+  border-color: #97A589;
+}
+
+[data-theme="dark"] .certificate-card-content h3 {
+  color: #F7F4EA;
+}
+
+[data-theme="dark"] .certificate-card-content p,
+[data-theme="dark"] .certificate-card-content > span {
+  color: #97A589;
+}
+
+[data-theme="dark"] .certificate-card-actions button {
+  background: #97A589;
+  border-color: #E2E6D7;
+  color: #1F362D;
+}
+
+[data-theme="dark"] .certificate-card-actions button:hover {
+  background: #E2E6D7;
+  color: #1F362D;
+}
+
+/* 9. RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .certificates-page {
+    padding: 18px;
+  }
+
+  .certificates-header h1 {
+    font-size: 24px;
+  }
+
+  .certificates-header-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .certificate-card {
+    padding: 16px;
+  }
+
+  .certificate-card-actions {
+    flex-direction: column;
+  }
+
+  .certificate-card-actions button {
+    width: 100%;
+  }
+}
+
+
+/* 1. CERTIFICATE PREVIEW ACTIONS */
+
+.certificate-preview-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.certificate-preview-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border: 1px solid #1F362D;
+  border-radius: 8px;
+  background: #1F362D;
+  color: #F7F4EA;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.certificate-preview-actions button:hover {
+  background: #97A589;
+  border-color: #97A589;
+  color: #1F362D;
+  transform: translateY(-2px);
+}
+
+/* 2. CERTIFICATE PREVIEW CONTAINER */
+
+.certificates-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.certificate-preview-actions button:focus-visible {
+  outline: 3px solid #97A589;
+  outline-offset: 3px;
+}
+
+/* 3. CERTIFICATE PREVIEW RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .certificate-preview-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .certificate-preview-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-page {
+    overflow-x: hidden;
+  }
+}
+

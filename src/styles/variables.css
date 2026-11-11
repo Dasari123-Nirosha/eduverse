@@ -1,0 +1,186 @@
+
+/* 1. EDUVERSE BRAND COLORS */
+
+:root {
+  --color-primary: #1F362D;
+  --color-secondary: #97A589;
+  --color-accent: #E2E6D7;
+  --color-background: #F7F4EA;
+
+  --color-concrete: var(--color-primary);
+  --color-warm-steel: var(--color-background);
+  --color-rosewood: var(--color-accent);
+  --color-peaches: var(--color-secondary);
+  --color-dawn: var(--color-primary);
+
+  /* 2. LIGHT THEME */
+
+  --bg-primary: #F7F4EA;
+  --bg-secondary: #E2E6D7;
+  --bg-surface: #F7F4EA;
+  --bg-header: #F7F4EA;
+  --bg-sidebar: #1F362D;
+
+  --text-primary: #1F362D;
+  --text-secondary: #97A589;
+  --text-on-dark: #F7F4EA;
+  --text-on-light: #1F362D;
+
+  --border-color: #E2E6D7;
+
+  /* 3. PAGE BACKGROUND COLORS */
+
+  --bg-page-1: var(--bg-primary);
+  --bg-page-2: var(--bg-secondary);
+  --bg-page-3: var(--bg-primary);
+  --bg-page-4: var(--color-secondary);
+  --bg-page-5: var(--bg-primary);
+
+  /* 4. HEADER BACKGROUND COLORS */
+
+  --bg-header-1: var(--bg-sidebar);
+  --bg-header-2: var(--bg-header);
+  --bg-header-3: var(--bg-secondary);
+  --bg-header-4: var(--color-secondary);
+  --bg-header-5: var(--bg-sidebar);
+
+  /* 5. SIDEBAR BACKGROUND COLORS */
+
+  --bg-sidebar-1: #1F362D;
+  --bg-sidebar-2: #F7F4EA;
+  --bg-sidebar-3: #E2E6D7;
+  --bg-sidebar-4: #97A589;
+  --bg-sidebar-5: #1F362D;
+
+  /* 6. CARD BACKGROUND COLORS */
+
+  --bg-card-1: var(--bg-surface);
+  --bg-card-2: var(--bg-secondary);
+  --bg-card-3: var(--bg-surface);
+  --bg-card-4: var(--color-secondary);
+  --bg-card-5: var(--bg-secondary);
+
+  /* 7. BUTTON COLORS */
+
+  --btn-bg-1: var(--color-primary);
+  --btn-bg-2: var(--color-secondary);
+  --btn-bg-3: var(--color-primary);
+  --btn-bg-4: var(--color-secondary);
+  --btn-bg-5: var(--color-accent);
+
+  --btn-text: var(--color-background);
+  --btn-hover: var(--color-secondary);
+
+  /* 8. FOOTER BACKGROUND COLORS */
+
+  --bg-footer-1: var(--color-primary);
+  --bg-footer-2: var(--bg-primary);
+  --bg-footer-3: var(--bg-secondary);
+  --bg-footer-4: var(--color-primary);
+  --bg-footer-5: var(--color-secondary);
+
+  /* 9. STATUS COLORS */
+
+  --color-success: var(--color-secondary);
+  --color-warning: var(--color-accent);
+  --color-danger: var(--color-primary);
+  --color-info: var(--color-secondary);
+
+  /* 10. TYPOGRAPHY */
+
+  --font-primary: 'Inter', Arial, sans-serif;
+
+  --font-size-small: 13px;
+  --font-size-normal: 15px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-heading: 32px;
+
+  /* 11. LAYOUT */
+
+  --sidebar-width: 260px;
+  --topbar-height: 75px;
+  --container-width: 1440px;
+
+  /* 12. BORDER RADIUS */
+
+  --radius-small: 8px;
+  --radius-medium: 14px;
+  --radius-large: 22px;
+  --radius-round: 50%;
+
+  /* 13. TRANSITIONS */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* 14. DARK THEME */
+
+[data-theme="dark"] {
+  --bg-primary: #1F362D;
+  --bg-secondary: #97A589;
+  --bg-surface: #1F362D;
+  --bg-header: #1F362D;
+  --bg-sidebar: #1F362D;
+
+  --text-primary: #F7F4EA;
+  --text-secondary: #E2E6D7;
+  --text-on-dark: #F7F4EA;
+  --text-on-light: #1F362D;
+
+  --border-color: #97A589;
+
+  --bg-page-1: var(--bg-primary);
+  --bg-page-2: var(--bg-secondary);
+  --bg-page-3: var(--bg-primary);
+  --bg-page-4: var(--color-secondary);
+  --bg-page-5: var(--bg-primary);
+
+  --bg-header-1: var(--bg-header);
+  --bg-header-2: var(--bg-primary);
+  --bg-header-3: var(--bg-secondary);
+  --bg-header-4: var(--bg-secondary);
+  --bg-header-5: var(--bg-header);
+
+  --bg-sidebar-1: var(--bg-sidebar);
+  --bg-sidebar-2: var(--bg-primary);
+  --bg-sidebar-3: var(--bg-secondary);
+  --bg-sidebar-4: var(--bg-secondary);
+  --bg-sidebar-5: var(--bg-sidebar);
+
+  --bg-card-1: var(--bg-surface);
+  --bg-card-2: var(--bg-secondary);
+  --bg-card-3: var(--bg-surface);
+  --bg-card-4: var(--bg-secondary);
+  --bg-card-5: var(--bg-secondary);
+
+  --bg-footer-1: var(--bg-sidebar);
+  --bg-footer-2: var(--bg-primary);
+  --bg-footer-3: var(--bg-secondary);
+  --bg-footer-4: var(--bg-sidebar);
+  --bg-footer-5: var(--bg-secondary);
+}
+
+/* 15. WELCOME PAGE TITLE */
+
+.welcome-screen h1 {
+  color: var(--text-primary);
+}
+
+.welcome-screen h1 span {
+  display: inline-block;
+  color: var(--text-primary);
+}
+
+/* 16. GLOBAL THEME TRANSITION */
+
+body,
+#root {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
+}
